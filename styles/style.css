@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -58,7 +59,7 @@ body{
 }
 .search i{
     position: absolute;
-    right: 0;
+    right: 16px;
     top: 16px;
     color: #BABABA;
 }
@@ -67,29 +68,27 @@ ul{
     display: flex;
     gap: 24px;
 }
-ul li{
-
-}
 ul li a{
     text-decoration: none;
     color: #707070;
     font-weight: 600;
 }
 
-/* Products Section Styles */
-
 /* Banner Section Styles */
 .banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 140px;
     background-color: #FEEAE9;
     max-width: 1212px;
+    border-radius: 10px;
     margin: 0 auto;
     margin-top: 64px;
-    border-radius: 10px;
-    padding: 46px;
+}
+.banner-container{
+    max-width: 1128px;
+    margin: 0 auto;
+    display: flex;
+    gap: 140px;
+    justify-content: space-between;
+    align-items: center;
 }
 .banner-title{
     font-size: 56px;
@@ -116,6 +115,109 @@ ul li a{
     cursor: pointer;
 }
 .btn button i{
+    margin-left: 10px;
+}
+
+/* Products Section Styles */
+.products{
+    max-width: 1128px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+.categories-title{
+    color: #1F1F1F;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+.categories-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 360px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 24px 24px;
+}
+.item h4{
+    font-size: 36px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.item-1{
+    background: linear-gradient(151.85deg, #ff9c35 14.537%,#ffd019 84.486%);
+}
+.item-2{
+    background: linear-gradient(180.00deg, #ff589b -0.006%,#ff136f 99.994%);
+}
+.item-3{
+    background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%,rgb(63, 7, 248) 74.29%);
+}
+
+/* Shoes Section Start */
+.shoes, .backpack{
+    max-width: 1128px;
+    margin: 0 auto;
+    margin-top: 98px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.see{
+    color: #FF9D00;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+}
+.shoes-container, .backpack-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+.shoes-items, .backpack-items{
+    padding: 12px 14px;
+}
+.shoes-items img, .backpack-items img{
+    width: 336px;
+    height: 202;
+    margin-bottom: 22px;
+}
+.shoe-title, .backpack-title{
+    font-weight: 600;
+    font-size: 24px;
+    color: #1F1F1F;
+    margin-bottom: 16px;
+}
+.shoe-description, .backpack-description{
+    color: #4E4E4E;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+.shoe-price, .backpack-price{
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+}
+.shoes-items button, .backpack-items button{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+.shoes-items button i, .backpack-items button i{
     margin-left: 10px;
 }
 
