@@ -1,0 +1,138 @@
+/* Shared Styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Body Styles Start */
+body{
+    background-color: #E5E5E5;
+}
+.header{
+    margin-top: 50px;
+}
+.nav{
+    max-width: 1128px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.logo{
+    width: 160px;
+    height: 40px;
+}
+.search{
+    width: 500px;
+    height: 48px;
+    position: relative;
+}
+.search input{
+    width: 100%;
+    padding: 12px;
+    background-color: #F1F1F1;
+    color: #CCCCCC;
+    border-radius: 66px;
+    font-size: 16px;
+    border: none;
+    font-style: italic;
+}
+.search input:focus{
+    color: #000000;
+    outline: 1px solid #BABABA;
+}
+.search i{
+    position: absolute;
+    right: 0;
+    top: 16px;
+    color: #BABABA;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+ul li{
+
+}
+ul li a{
+    text-decoration: none;
+    color: #707070;
+    font-weight: 600;
+}
+
+/* Products Section Styles */
+
+/* Banner Section Styles */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 140px;
+    background-color: #FEEAE9;
+    max-width: 1212px;
+    margin: 0 auto;
+    margin-top: 64px;
+    border-radius: 10px;
+    padding: 46px;
+}
+.banner-title{
+    font-size: 56px;
+    color: #1F1F1F;
+}
+.banner-description{
+    color: #4E4E4E;
+    line-height: 26px;
+    margin: 8px 0;
+}
+.price{
+    color: #FF136F;
+    font-weight: 500;
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+.btn button{
+    background-image: linear-gradient(#FF589B, #FF136F);
+    padding: 16px 28px;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn button i{
+    margin-left: 10px;
+}
+
+/*Break Point Responsive */
+@media only screen and (max-width: 1068px) {
+    .nav ul{
+        display: none;
+    }
+    .nav .menu{
+        display: block;
+    }
+}
+@media only screen and (max-width: 768px){
+    .search{
+        max-width: 400px;
+    }
+    .nav{
+        gap: 56px;
+    }
+}
