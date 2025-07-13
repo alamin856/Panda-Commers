@@ -165,6 +165,7 @@ ul li a{
     max-width: 1128px;
     margin: 0 auto;
     margin-top: 98px;
+    margin-bottom: 70px;
 }
 .title{
     display: flex;
@@ -184,6 +185,7 @@ ul li a{
     align-items: center;
     gap: 24px;
     text-align: center;
+    padding: 12px;
 }
 .shoes-items, .backpack-items{
     padding: 12px 14px;
@@ -216,9 +218,69 @@ ul li a{
     border-radius: 6px;
     font-weight: 500;
     margin-top: 16px;
+    border: none;
+    cursor: pointer;
 }
 .shoes-items button i, .backpack-items button i{
     margin-left: 10px;
+}
+
+/** Footer Section Styles */
+.footer{
+    height: 456px;
+    margin: auto;
+    position: relative;
+}
+.footer-container{
+    max-width: 1128px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+}
+.footer-title{
+    color: #1F1F1F;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.footer-description{
+    font-weight: 500;
+    color: #707070;
+    margin-bottom: 16px;
+}
+label{
+    position: relative;
+}
+label input{
+    width: 680px;
+    padding: 16px;
+    background-color: #FFFFFF;
+    border: none;
+    color: #CCCCCC;
+    font-size: 24px;
+    border-radius: 6px;
+}
+label button{
+    position: absolute;
+    padding: 16px;
+    right: 0px;
+    border: none;
+    background-image: linear-gradient(#FF589B, #FF136F);
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 24px;
+}
+.footer-container input:focus{
+    color: #000000;
+    outline: 1px solid #BABABA;
+}
+hr{
+    color: #CCCCCC;
 }
 
 /*Break Point Responsive */
